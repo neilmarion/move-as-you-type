@@ -20,3 +20,7 @@
   overflow:hidden; 
   font-family: Courier, 'Courier New', monospace
 }
+
+.done {
+  opacity: 0.5
+}

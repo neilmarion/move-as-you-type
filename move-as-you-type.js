@@ -18,10 +18,18 @@ $(document).ready(function(){
 })
 
 $(document).keypress(function(e){
-  next = $('.focused').next()
-  $('.focused').removeClass('focused')
-  next.addClass('focused')
-  $('.content').animate({
-    'marginLeft' : "-=29px"
-  }, 50)
+  if(String.fromCharCode(e.keyCode) == text[index]) {
+    current = $('.focused')
+    next = $('.focused').next()
+    $('.focused').removeClass('focused')
+    current.addClass('done')
+    next.addClass('focused')
+    $('.content').animate({
+      'marginLeft' : "-=29px"
+    }, 50)
+    index++
+  } else {
+
+  }
+
 })
