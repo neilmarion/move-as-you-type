@@ -1,7 +1,22 @@
 .focused {
-  color: red;
+  color: red
 }
 
 .char {
-  display: inline;
+  display: inline
+}
+
+.pointer {
+  text-align:center; 
+  color:red; 
+  font-size:24px
+}
+
+.content {
+  text-align:center; 
+  font-size:48px; 
+  overflow:auto; 
+  white-space:nowrap; 
+  overflow:hidden; 
+  font-family: Courier, 'Courier New', monospace
 }
