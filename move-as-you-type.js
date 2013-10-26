@@ -29,7 +29,8 @@ $(document).keypress(function(e){
     }, 50)
     index++
   } else {
-
+    p = $('.pointer')
+    p.effect('shake')
   }
 
 })

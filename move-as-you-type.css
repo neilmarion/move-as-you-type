@@ -1,5 +1,9 @@
+body {
+  overflow:hidden
+}
+
 .focused {
-  color: red
+  color: #3498db  
 }
 
 .char {
@@ -8,14 +12,13 @@
 
 .pointer {
   text-align:center; 
-  color:red; 
+  color: #3498db;
   font-size:24px
 }
 
 .content {
   text-align:center; 
   font-size:48px; 
-  overflow:auto; 
   white-space:nowrap; 
   overflow:hidden; 
   font-family: Courier, 'Courier New', monospace
