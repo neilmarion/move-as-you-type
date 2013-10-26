@@ -1,8 +1,10 @@
 var text = "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+var index = 0;
 
 function processText(t){
-  var processedText = ""
-  for(var x=0; x<t.length; x++){
+  var  processedText = ""
+  processedText =  processedText + '<div class="char focused">'+ t[0] +'</div>'
+  for(var x=1; x<t.length; x++){
     processedText = processedText + '<div class="char">'+ t[x] +'</div>'
   }
   return processedText
@@ -16,6 +18,9 @@ $(document).ready(function(){
 })
 
 $(document).keypress(function(e){
+  next = $('.focused').next()
+  $('.focused').removeClass('focused')
+  next.addClass('focused')
   $('.content').animate({
     'marginLeft' : "-=29px"
   }, 50)
